@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import { RFValue } from 'react-native-responsive-fontsize';
+
+import styled from 'styled-components/native';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
 export const Container = styled.View`
@@ -16,6 +17,12 @@ export const Header = styled.View`
     align-items: center;
 `;
 
+export const InputContainer = styled.View`
+    padding: 0 16px;
+    position: absolute;
+    width: 100%;
+    margin-top: ${RFValue(173)}px;
+`;
 
 
 

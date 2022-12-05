@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Header } from "./styles";
-import Logo from '../assets/todoLogo.svg';
-import { RFValue } from "react-native-responsive-fontsize";
+import { Input } from "../components/Input";
+import { Container, Header, InputContainer } from "./styles";
 
+import Logo from '../assets/todoLogo.svg'
 
 
 export function Home(){
@@ -10,13 +10,23 @@ export function Home(){
     return(
         
             <Container>
-                <Header>
+                <Header>  
                     <Logo/>
                 </Header>
+                <InputContainer>
+                    <Input 
+                        placeholder="Adicione uma nova tarefa"
+                        placeholderTextColor="#808080"
+                    />
+
+                    
+
+                    
+                </InputContainer>
 
             </Container>
        
     )
 
-};
+}
 
