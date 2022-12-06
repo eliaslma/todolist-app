@@ -1,6 +1,7 @@
 
 import styled from 'styled-components/native';
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 export const Container = styled.View`
@@ -17,13 +18,34 @@ export const Header = styled.View`
     align-items: center;
 `;
 
-export const InputContainer = styled.View`
+export const InputContainer = styled(GestureHandlerRootView)`
+    flex-direction: row;
     padding: 0 16px;
     position: absolute;
     width: 100%;
     margin-top: ${RFValue(173)}px;
+    align-items: center;
 `;
 
+export const TaskContainer = styled.View`
+    flex: 1;
+    margin-top: 40px;
+`;
+
+export const TaskHeader = styled.View`
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 16px;
+    
+`;
+
+export const Separator = styled.View`
+    height: 1px;
+    
+    background-color: #333333;
+    margin: 16px;
+`;
 
 
 
