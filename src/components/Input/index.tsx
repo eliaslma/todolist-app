@@ -1,4 +1,4 @@
-import React, { Reducer } from "react";
+import React from "react";
 import { TextInputProps } from "react-native";
 import { Container } from "./styles";
 

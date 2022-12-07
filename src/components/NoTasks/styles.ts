@@ -5,14 +5,14 @@ import styled from "styled-components/native";
 export const Container = styled.View`
     flex: 1;
     align-items: center;
-    padding: 16px;
+    margin-top: 32px;
 `;
 
 
 export const Separator = styled.View`
-height: 1px;
-background-color: #333333;
-margin: 16px;
+    height: 1px;
+    background-color: #333333;
+    margin-top: 16px;
 `;
 
 export const Title = styled.Text`

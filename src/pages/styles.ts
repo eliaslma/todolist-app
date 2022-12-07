@@ -1,10 +1,9 @@
-
 import styled from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
-export const Container = styled.View`
+export const Container = styled(GestureHandlerRootView)`
     flex: 1;
     background-color: #1A1A1A;
 
@@ -18,7 +17,7 @@ export const Header = styled.View`
     align-items: center;
 `;
 
-export const InputContainer = styled(GestureHandlerRootView)`
+export const InputContainer = styled.View`
     flex-direction: row;
     padding: 0 16px;
     position: absolute;
@@ -40,12 +39,15 @@ export const TaskHeader = styled.View`
     
 `;
 
-export const Separator = styled.View`
-    height: 1px;
-    
-    background-color: #333333;
-    margin: 16px;
+export const Tasks = styled.View`
+    flex: 1;
+    padding: 20px 16px 0px;
+
 `;
+
+
+
+
 
 
 
